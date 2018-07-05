@@ -1,0 +1,16 @@
+{
+  "name": "vue-cli-plugin-route",
+  "version": "0.0.1",
+  "description": "Vue CLI plugin for vue-router",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pksunkara/vue-cli-plugin-route.git"
+  },
+  "author": "Pavan Kumar Sunkara <pavan.sss1991@gmail.com> (pksunkara.github.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pksunkara/vue-cli-plugin-route/issues"
+  },
+  "homepage": "https://github.com/pksunkara/vue-cli-plugin-route#readme"
+}
