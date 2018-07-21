@@ -7,7 +7,9 @@ const routes = [
 ]
 
 /* eslint-disable no-new */
-export default new VueRouter({
+const router = new VueRouter({
   routes,
   mode: 'history'
 })
+
+export default router
