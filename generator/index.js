@@ -12,5 +12,5 @@ module.exports = (api, options, rootOptions) => {
     },
   });
 
-  api.render('./init');
+  api.render('./template/init');
 };
