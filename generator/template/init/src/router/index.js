@@ -8,8 +8,11 @@ const routes = [
 
 /* eslint-disable no-new */
 const router = new VueRouter({
-  routes,
-  mode: 'history'
+  <%_ if (history) { _%>
+  mode: 'history',
+  base: process.env.BASE_URL,
+  <%_ } _%>
+  routes
 })
 
 export default router

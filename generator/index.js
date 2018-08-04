@@ -12,5 +12,7 @@ module.exports = (api, options, rootOptions) => {
     },
   });
 
-  api.render('./template/init');
+  api.render('./template/init', {
+    history: options.history,
+  });
 };

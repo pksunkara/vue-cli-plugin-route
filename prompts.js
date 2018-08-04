@@ -15,6 +15,12 @@ module.exports = [
     ],
   },
   {
+    when: answers => answers.type === 'init',
+    name: 'history',
+    type: 'confirm',
+    messsage: 'Use history mode for router?',
+  },
+  {
     when: answers => answers.type === 'component',
     name: 'name',
     type: 'input',
