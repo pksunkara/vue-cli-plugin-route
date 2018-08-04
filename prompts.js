@@ -18,7 +18,7 @@ module.exports = [
     when: answers => answers.type === 'init',
     name: 'history',
     type: 'confirm',
-    messsage: 'Use history mode for router?',
+    message: 'Use history mode for router?',
   },
   {
     when: answers => answers.type === 'component',
