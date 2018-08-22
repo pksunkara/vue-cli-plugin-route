@@ -1,18 +1,7 @@
-// eslint-disable-next-line no-unused-vars
 module.exports = (api, options, rootOptions) => {
   // TODO: Typescript support
   // TODO: Post process lint
 
-  api.injectImports(api.entryFile, 'import router from \'./router\'');
-  api.injectRootOptions(api.entryFile, 'router');
-
-  api.extendPackage({
-    dependencies: {
-      'vue-router': '^3.0.1',
-    },
-  });
-
-  api.render('./template/init', {
-    history: options.history,
-  });
+  // eslint-disable-next-line global-require, import/no-dynamic-require
+  require(`./${options.type}`)(api, options, rootOptions);
 };

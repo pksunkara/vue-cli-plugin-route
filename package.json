@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/pksunkara/vue-cli-plugin-route/issues"
   },
-  "homepage": "https://github.com/pksunkara/vue-cli-plugin-route#readme"
+  "homepage": "https://github.com/pksunkara/vue-cli-plugin-route#readme",
+  "dependencies": {
+    "recast": "^0.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
