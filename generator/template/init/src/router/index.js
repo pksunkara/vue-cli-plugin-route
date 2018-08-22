@@ -3,8 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const routes = [
-]
+const routes = []
 
 // eslint-disable-next-line no-new
 const router = new VueRouter({
