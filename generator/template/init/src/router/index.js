@@ -9,8 +9,8 @@ const routes = []
 const router = new VueRouter({
   <%_ if (history) { _%>
   mode: 'history',
-  <%_ } _%>
   base: process.env.BASE_URL,
+  <%_ } _%>
   routes
 })
 
