@@ -12,7 +12,7 @@ module.exports = (api, options, rootOptions) => {
     files['src/router/index.js'] = prettier.format(files['src/router/index.js'], {
       semi: false,
       singleQuote: true,
-      parser: 'babylon',
+      parser: 'babel',
     });
   });
 };
