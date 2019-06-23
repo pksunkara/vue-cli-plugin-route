@@ -3,6 +3,9 @@
   "version": "0.0.7",
   "description": "Vue CLI plugin for vue-router",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pksunkara/vue-cli-plugin-route.git"

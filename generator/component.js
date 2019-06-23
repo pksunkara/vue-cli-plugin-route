@@ -19,16 +19,23 @@ module.exports = (api, options, rootOptions) => {
     const ast = recast.parse(files['src/router/index.js']);
     const expression = `({\n  path: '${options.route}',\n  name: '${options.name}',\n  component: ${options.name}\n})`;
     const objectExpression = recast.parse(expression).program.body[0].expression;
+    let inserted = false;
 
     recast.types.visit(ast, {
       visitVariableDeclarator({ node }) {
         if (node.id.name === 'routes' && node.init.type === 'ArrayExpression') {
           node.init.elements.push(objectExpression);
+          inserted = true;
         }
 
         return false;
       },
     });
+
+    if (!inserted) {
+      // eslint-disable-next-line no-console
+      console.warn('Unable to find `routes` array');
+    }
 
     // eslint-disable-next-line no-param-reassign
     files['src/router/index.js'] = recast.print(ast).code;
