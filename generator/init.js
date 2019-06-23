@@ -9,7 +9,5 @@ module.exports = (api, options, rootOptions) => {
     },
   });
 
-  api.render('./template/init', {
-    history: options.history,
-  });
+  api.render('./template/init');
 };

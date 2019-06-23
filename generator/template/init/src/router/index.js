@@ -7,7 +7,7 @@ const routes = []
 
 // eslint-disable-next-line no-new
 const router = new VueRouter({
-  <%_ if (history) { _%>
+  <%_ if (options.history) { _%>
   mode: 'history',
   base: process.env.BASE_URL,
   <%_ } _%>
